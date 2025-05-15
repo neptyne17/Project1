@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+	<meta charset='UTF-8'>
+	<title>-- WEB App --</title>
+</head>
+<body>
+
+	{%if message %}
+		<h5>Helo, {{ message }}!</h5>
+	{% endif %}
+
+	<form action="/login_submit" method ="post">
+		<input name="flogin" id="flogin" placeholder="Login" type="text"/>
+		<input name="fpasswd" id="fpasswd" placeholder="Password" type="text"/>
+		<input type="submit" value ="OK"/>
+	
+	</form>
+</body>
